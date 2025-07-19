@@ -26,24 +26,18 @@ langdetect>=1.0.9
 googletrans==4.0.0rc1
 
 # --- Text-to-Speech (TTS) ---
-gTTS>=2.5.1
-pyttsx3>=2.90  # Needed for offline TTS; works only with CPython <3.11
+gTTS==2.3.2
+# Removed streamlit-audio (not available on PyPI)
 
 # --- Speech Recognition (Voice Input) ---
 SpeechRecognition>=3.10.1
-# Do NOT include pyaudio here — it's OS-dependent and should be installed manually if needed
+# Skip PyAudio if deploying to cloud (causes platform issues)
 
 # --- PDF Generation (Downloadable Reports) ---
-fpdf>=1.7.2
-PyPDF2>=3.0.1
+fpdf2>=2.7.6  # ✅ Use fpdf2, not fpdf or PyFPDF
 
 # --- UI Enhancements ---
 streamlit-option-menu>=0.3.6
 
 # --- Audio Recorder (Optional) ---
 streamlit-audiorec>=0.1.1
-
-# (Removed streamlit-audio as it doesn't exist on PyPI)
-
-# --- Compatibility Fixes ---
-# Use Python version 3.10 or 3.9 for best compatibility with all packages
