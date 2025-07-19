@@ -35,8 +35,6 @@ pyaudio; platform_system == "Windows"  # Only include if deploying locally on Wi
 # --- PDF Generation (Downloadable Reports) ---
 fpdf>=1.7.2
 PyPDF2>=3.0.1
-gTTS==2.3.2
-
 # --- UI Enhancements ---
 streamlit-option-menu>=0.3.6
 
