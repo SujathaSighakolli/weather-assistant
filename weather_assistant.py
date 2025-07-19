@@ -7,7 +7,6 @@ import streamlit.components.v1 as components
 import requests
 import os
 import json
-import pyttsx3
 import pandas as pd
 import plotly.express as px
 import folium
