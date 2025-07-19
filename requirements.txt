@@ -28,8 +28,6 @@ googletrans==4.0.0rc1
 
 # --- Text-to-Speech (TTS) ---
 gTTS>=2.5.1
-streamlit-audio>=0.11.0
-
 # --- Speech Recognition (Voice Input) ---
 SpeechRecognition>=3.10.1
 pyaudio; platform_system == "Windows"  # Only include if deploying locally on Windows
