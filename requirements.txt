@@ -1,11 +1,45 @@
 # requirements.txt
-streamlit
-requests
-python-dotenv
-speechrecognition
-gTTS
-fpdf
-pyaudio
-folium
-geocoder
-plotly
+# --- Core Framework ---
+streamlit>=1.32.2
+
+# --- HTTP Requests ---
+requests>=2.31.0
+
+# --- Data Processing ---
+pandas>=2.2.2
+numpy>=1.26.4
+
+# --- Plotting and Visualization ---
+matplotlib>=3.8.4
+plotly>=5.21.0
+
+# --- Environment and File Handling ---
+python-dotenv>=1.0.1
+Pillow>=10.3.0
+
+# --- Maps and Geolocation ---
+geopy>=2.4.1
+folium>=0.16.0
+streamlit-folium>=0.17.0
+
+# --- Translation & Language Detection ---
+langdetect>=1.0.9
+googletrans==4.0.0rc1
+
+# --- Text-to-Speech (TTS) ---
+gTTS>=2.5.1
+streamlit-audio>=0.11.0
+
+# --- Speech Recognition (Voice Input) ---
+SpeechRecognition>=3.10.1
+pyaudio; platform_system == "Windows"  # Only include if deploying locally on Windows
+
+# --- PDF Generation (Downloadable Reports) ---
+fpdf>=1.7.2
+PyPDF2>=3.0.1
+
+# --- UI Enhancements ---
+streamlit-option-menu>=0.3.6
+
+# --- Audio Recorder (Optional) ---
+streamlit-audiorec>=0.1.1
