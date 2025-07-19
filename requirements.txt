@@ -26,18 +26,20 @@ langdetect>=1.0.9
 googletrans==4.0.0rc1
 
 # --- Text-to-Speech (TTS) ---
-gTTS==2.3.2
-# Removed streamlit-audio (not available on PyPI)
+gTTS==2.5.1
 
 # --- Speech Recognition (Voice Input) ---
 SpeechRecognition>=3.10.1
-# Skip PyAudio if deploying to cloud (causes platform issues)
 
-# --- PDF Generation (Downloadable Reports) ---
-fpdf2>=2.7.6  # ✅ Use fpdf2, not fpdf or PyFPDF
+# --- PDF Generation ---
+fpdf2==2.7.8
+PyPDF2>=3.0.1
 
 # --- UI Enhancements ---
 streamlit-option-menu>=0.3.6
 
 # --- Audio Recorder (Optional) ---
-streamlit-audiorec>=0.1.1
+streamlit-audiorec==0.1.1
+
+# --- Timezones ---
+pytz>=2024.1
