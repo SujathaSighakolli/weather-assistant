@@ -193,45 +193,19 @@ def generate_simple_pdf(report_data, city):
     pdf.output(filename)
     return filename
 
-import threading
-import pyttsx3
+from gtts import gTTS
+import tempfile
+import streamlit as st
 
 def speak_weather_summary(text, lang_code="en"):
-    def run_tts():
-        try:
-            engine = pyttsx3.init()
-            engine.setProperty('rate', 150)
+    try:
+        tts = gTTS(text=text, lang=lang_code)
+        with tempfile.NamedTemporaryFile(delete=False, suffix=".mp3") as fp:
+            tts.save(fp.name)
+            st.audio(fp.name, format="audio/mp3")
+    except Exception as e:
+        st.error("🔊 TTS Error: " + str(e))
 
-            # Get available voices
-            voices = engine.getProperty('voices')
-
-            lang_voice_map = {
-                "hi": ["hindi", "hi"],
-                "te": ["telugu", "te"],
-                "ta": ["tamil", "ta"],
-                "kn": ["kannada", "kn"],
-                "ml": ["malayalam", "ml"],
-                "en": ["english", "en"]
-            }
-
-            matched = False
-            if lang_code in lang_voice_map:
-                for voice in voices:
-                    for keyword in lang_voice_map[lang_code]:
-                        if keyword in voice.name.lower() or keyword in voice.id.lower():
-                            engine.setProperty('voice', voice.id)
-                            matched = True
-                            break
-                    if matched:
-                        break
-
-            if not matched:
-                print(f"[INFO] Voice not found for {lang_code}, using default.")
-
-            engine.say(text)
-            engine.runAndWait()
-        except Exception as e:
-            print("❌ TTS Error:", e)
 
     # Run in background to avoid blocking
     threading.Thread(target=run_tts).start()
