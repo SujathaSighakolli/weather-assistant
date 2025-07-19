@@ -1,0 +1,26 @@
+{
+  "en": {
+    "font_family": "'Poppins', sans-serif",
+    "font_url": "https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+  },
+  "hi": {
+    "font_family": "'Noto Sans Devanagari', sans-serif",
+    "font_url": "https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap"
+  },
+  "te": {
+    "font_family": "'Noto Sans Telugu', sans-serif",
+    "font_url": "https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu&display=swap"
+  },
+  "ta": {
+    "font_family": "'Noto Sans Tamil', sans-serif",
+    "font_url": "https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil&display=swap"
+  },
+  "kn": {
+    "font_family": "'Noto Sans Kannada', sans-serif",
+    "font_url": "https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada&display=swap"
+  },
+  "ml": {
+    "font_family": "'Noto Sans Malayalam', sans-serif",
+    "font_url": "https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam&display=swap"
+  }
+}

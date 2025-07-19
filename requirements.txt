@@ -1,0 +1,11 @@
+# requirements.txt
+streamlit
+requests
+python-dotenv
+speechrecognition
+gTTS
+fpdf
+pyaudio
+folium
+geocoder
+plotly
