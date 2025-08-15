@@ -52,15 +52,6 @@ It delivers **real-time weather insights**, **lifestyle suggestions**, and a **m
 
 ---
 
-## 📽️ Demo Highlights
-1. **5-Day Forecast** 📅  
-2. **Live Map View** 🗺️  
-3. **Multi-City Comparison** 🌇  
-4. **AI Suggestions with TTS** 🎙️  
-5. **Language & Theme Toggle** 🔄  
-
----
-
 ## 🛠 Tech Stack
 - **Frontend & Framework**: Streamlit
 - **Weather Data**: WeatherAPI
